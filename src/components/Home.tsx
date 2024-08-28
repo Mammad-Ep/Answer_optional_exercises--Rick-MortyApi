@@ -68,11 +68,28 @@ import { Img } from './styled-components/styledComponent1';
 // ===========================================================
 
 // Exercise3--React_Quiz_Example
+
+// const Home = () => {
+
+//   return (
+//     <div>
+//       <p style={{textAlign:"center",fontSize:"1.5rem"}}>تمرین 3 - در آزمون ریکت_React Quiz Example</p>
+//     </div>
+//   )
+
+// }
+
+// export default Home
+
+// ===========================================================
+
+// Exercise4--Rickandmortyapi
+
 const Home = () => {
 
   return (
     <div>
-      <p style={{textAlign:"center",fontSize:"1.5rem"}}>تمرین 3 - در آزمون ریکت_React Quiz Example</p>
+      <p style={{textAlign:"center",fontSize:"1.5rem"}}>تمرین 4 - در آزمون ریکت_Rickandmortyapi</p>
     </div>
   )
 

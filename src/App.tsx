@@ -15,6 +15,8 @@ import { examiner } from './dataTypes/types/quizReact';
 import ReactQuizQuestions from './components/ReactQuizQuestions';
 import useLocalStorage from './components/hooks/useLocalState';
 import ReactQuizResult from './components/ReactQuizResult';
+import RickMortyList from './components/RickMortyList';
+import RickMortyDetails from './components/RickMortyDetails';
 // ___________________________________________________________
 
 // const eaxaminerState = {
@@ -38,8 +40,8 @@ function App() {
   return (
     <>
       <header>
-        <div>
-          <h2 className='main-title'>پاسخ سوالات تمرینات اختیاری - استادی فرانت اند2</h2>
+        <div className='main-title'>
+          <h2 className='header-title'>پاسخ سوالات تمرینات اختیاری - استادی فرانت اند2</h2>
         </div>
         <Navbar />
       </header>
@@ -62,7 +64,10 @@ function App() {
 
         <Route path='/ReactQuiz/' element={<Provider store={store}><ReactQuiz examiner={examiner} changeExaminer={setExaminer} /></Provider>}></Route>
         <Route path='/ReactQuiz-questions/' element={<Provider store={store}><ReactQuizQuestions examiner={examiner} changeExaminer={setExaminer} /></Provider>}></Route>
-        <Route path='/ReactQuiz-result/' element={<Provider store={store}><ReactQuizResult examiner={examiner}/></Provider>}></Route>
+        <Route path='/ReactQuiz-result/' element={<Provider store={store}><ReactQuizResult examiner={examiner} /></Provider>}></Route>
+
+        <Route path='/rick&morty-list/' element={<Provider store={store}><RickMortyList /></Provider>}></Route>
+        <Route path='/rick&morty-list/:id/' element={<Provider store={store}><RickMortyDetails /></Provider>}></Route>
       </Routes>
     </>
   );

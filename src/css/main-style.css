@@ -1,8 +1,15 @@
 
-.main-title{
+* {
+    /* direction: rtl; */
+    box-sizing: border-box;
+}
 
-    position: relative;
-    right: calc(50% - 214px);
+.main-title{
+margin: 30px auto;
+text-align: center;
+}
+
+.header-title{
     color: red;
     background-color: yellow;
     padding: 13px 10px;
